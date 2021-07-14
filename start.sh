@@ -1,6 +1,6 @@
 
 sudo chmod -R 777 /home/arcade/shared/frontends
-sudo cp -R attract /home/arcade/shared/frontends
+sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
 
 sudo cp -R /home/arcade/update/mame /home/arcade/shared/configs
