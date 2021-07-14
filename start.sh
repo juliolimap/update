@@ -8,4 +8,4 @@ sudo cp -r /home/arcade/update/mame/attract /usr/local/bin
 sudo cp -r /home/arcade/update/mame/attract /usr/bin
 sudo rm -R /home/arcade/update
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
-sleep 3
+sleep 6
