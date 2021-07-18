@@ -32,7 +32,7 @@ fe.do_nut("gamelist.nut");
   
 fe.load_module("animate.nut"); 
 // add Free play text    1127, 875, 641, 70 );    
-local free = fe.add_text( "[FICHA]",   543, 495, 333, 48 );
+local free = fe.add_text( "[FICHA]",   543, 495, 333, 34);
 free.align = Align.Left
 free.set_rgb(0,0,0);
 free.font = "tahomabd";
@@ -51,7 +51,7 @@ free.font = "tahomabd";
 
 				
  // add Free play text    1127, 875, 641, 70 );    
-local free = fe.add_text( "[FICHA]",   545, 495, 333, 48 );
+local free = fe.add_text( "[FICHA]",   545, 495, 333, 34 );
 free.align = Align.Left
 free.set_rgb(255,210,0);
 free.font = "tahomabd";
