@@ -12,8 +12,8 @@ sudo cp -r /home/arcade/update/MAME.lyt /home/arcade/.qjoypad3
 sudo pacman -S mame --noconfirm
 
 
-#sudo rm -R /home/arcade/update
+sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
-sudo pacman -Sy --noconfirm
+#sudo pacman -Sy --noconfirm
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
 sleep 6
