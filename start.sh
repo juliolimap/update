@@ -5,6 +5,13 @@ sudo cp -R /home/arcade/update/mame /home/arcade/shared/configs
 sudo cp -r /home/arcade/update/attract/attract /usr/local/bin
 sudo cp -r /home/arcade/update/attract/attract /usr/bin
 #sudo cp -r /home/arcade/update/attract/megatech_key.key /home/arcade
+sudo cp -r /home/arcade/update/default.lyt /home/arcade/.qjoypad3
+sudo cp -r /home/arcade/update/layout /home/arcade/.qjoypad3
+sudo cp -r /home/arcade/update/MAME.lyt /home/arcade/.qjoypad3
+
+
+
+
 sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
 sudo pacman -Sy --noconfirm
