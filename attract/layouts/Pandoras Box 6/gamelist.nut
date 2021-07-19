@@ -8,7 +8,7 @@ local flw = fe.layout.width;
 local flh = fe.layout.height;
 
 //font size
-local font_size =16;
+local font_size =20;
 
  local set_sel_rgb= (255,243, 20); 
 //font color
