@@ -9,7 +9,7 @@ sudo cp -r /home/arcade/update/default.lyt /home/arcade/.qjoypad3
 sudo cp -r /home/arcade/update/layout /home/arcade/.qjoypad3
 sudo cp -r /home/arcade/update/MAME.lyt /home/arcade/.qjoypad3
 
-yes | sudo pacman -S groovymame
+#yes | sudo pacman -S groovymame
 
 
 sudo rm -R /home/arcade/update
