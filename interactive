@@ -317,7 +317,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ne
 
 worker_power_psx() {
 clear
-wget https://download1324.mediafire.com/o60h58mockrg/49es6b333ztspxq/psx.7z
+wget https://download844.mediafire.com/isaq2jyozk2g/0pttowjsrtkpzh1/psx.7z
 7z x psx.7z -o/home/arcade/shared/roms
  
 sudo rm -r psx.7z
@@ -328,7 +328,6 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ps
 
 worker_power_naomi() {
 clear
-wget https://download1324.mediafire.com/o60h58mockrg/49es6b333ztspxq/psx.7z
 7z x naomi.7z -o/home/arcade/shared/roms
  
 sudo rm -r naomi.7z
