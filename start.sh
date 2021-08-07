@@ -10,7 +10,7 @@ sudo cp -r /home/arcade/update/layout /home/arcade/.qjoypad3
 sudo cp -r /home/arcade/update/MAME.lyt /home/arcade/.qjoypad3
 
 #yes | sudo pacman -S groovymame
-
+sudo cp -r "/home/arcade/update/interactive" /opt/gasetup/core/procedures
 
 sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
