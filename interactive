@@ -249,7 +249,9 @@ worker_setup_menu() {
 
 worker_power_atari() {
 clear
-wget http://download2276.mediafire.com/k3h8k0lkxxeg/3zazm7m9l69msug/Atari.7z
+wget https://download1638.mediafire.com/p0003u4iodyg/3zazm7m9l69msug/Atari.7z
+
+
 7z x  Atari.7z -o/home/arcade/shared/roms
 rm -r Atari.7z
  
