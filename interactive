@@ -363,14 +363,14 @@ done
   local default=no
   while [ 0 = 0 ]; do
     ask_option $default "Instalar emulador espaco ($LN)"  ""  required \
-      1 "Download Atari 2600 " \
-      2 "Download Atomiswave" \
-      3 "Download Master System" \
-      4 "Download Super Nintendo" \
-      5 "Download Megadrive" \
-      6 "Download Nintendinho" \
-      7 "Download Playstation" \
-      8 "Download Naomi" \
+      1 "Download Atari 2600 (128M)" \
+      2 "Download Atomiswave (2.6G)" \
+      3 "Download Master System (2.0G)" \
+      4 "Download Super Nintendo (2.0G)" \
+      5 "Download Megadrive (5.3G)" \
+      6 "Download Nintendinho (650M)" \
+      7 "Download Playstation (755M)" \
+      8 "Download Naomi (8.0G)" \
       9 "Voltar ao Menu" || return
 
     case $ANSWER_OPTION in
