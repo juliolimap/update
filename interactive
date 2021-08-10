@@ -263,7 +263,7 @@ cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/atari26
 
 worker_power_atomis() {
 clear
-wget https://download1500.mediafire.com/rf7zkjrn3ieg/kqdomb6k0k1kqzv/atomiswave.7z
+wget http://download2282.mediafire.com/azk0pvxnc64g/kqdomb6k0k1kqzv/atomiswave.7z
 7z x atomiswave.7z -o/home/arcade/shared/roms
  
 sudo rm -r atomiswave.7z
@@ -274,7 +274,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/Sa
 
 worker_power_master() {
 clear
-wget https://download847.mediafire.com/stq72tst3tig/vqq3qxvrh1n78nm/mastersystem.7z
+wget http://download847.mediafire.com/b7bs3pq1yshg/vqq3qxvrh1n78nm/mastersystem.7z
 7z x mastersystem.7z -o/home/arcade/shared/roms
  
 sudo rm -r mastersystem.7z
@@ -286,7 +286,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ma
 }
 worker_power_snes() {
 clear
-wget https://download848.mediafire.com/wm1oblp656cg/ssis7rmokwoxmfq/snes.7z
+wget http://download848.mediafire.com/tavcvfx5jikg/ssis7rmokwoxmfq/snes.7z
 7z x snes.7z -o/home/arcade/shared/roms
  
 sudo rm -r snes.7z
@@ -297,7 +297,8 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/sn
 
 worker_power_mega() {
 clear
-wget https://download1079.mediafire.com/ts2ce36luqgg/q2g9xamloy1s1b0/megadrive.7z
+wget http://download1079.mediafire.com/qaaq4h586t0g/q2g9xamloy1s1b0/megadrive.7z
+      
 7z x megadrive.7z -o/home/arcade/shared/roms
  
 sudo rm -r megadrive.7z
