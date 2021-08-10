@@ -348,9 +348,21 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/SE
 }
 
 worker_instal_system() {
+#!/usr/bin/env bash
+df -h . | awk '{print $4}' >/tmp/HD.txt
+ 
+
+FILENAME='/tmp/HD.txt'
+I=0
+for LN in $(cat $FILENAME)
+do
+    echo "Line number $((I++)) -->  $LN"
+done
+
+  
   local default=no
   while [ 0 = 0 ]; do
-    ask_option $default "Instalar emulador (requer espaco)" "" required \
+    ask_option $default "Instalar emulador espaco ($LN)"  ""  required \
       1 "Download Atari 2600 " \
       2 "Download Atomiswave" \
       3 "Download Master System" \
