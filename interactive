@@ -247,11 +247,17 @@ worker_setup_menu() {
   return 0
 }
 
+mediafire() {
+url=$(curl -Lqs "$1"|grep "href.*download.*media.*"|tail -1|cut -d '"' -f 2)
+wget "$url" # or wget "$url" if you prefer.
+ }
+
+
+
+
 worker_power_atari() {
 clear
-wget https://download1638.mediafire.com/p0003u4iodyg/3zazm7m9l69msug/Atari.7z
-
-
+mediafire https://www.mediafire.com/file/3zazm7m9l69msug/Atari.7z/file
 7z x  Atari.7z -o/home/arcade/shared/roms
 rm -r Atari.7z
  
@@ -263,7 +269,7 @@ cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/atari26
 
 worker_power_atomis() {
 clear
-wget http://download2282.mediafire.com/azk0pvxnc64g/kqdomb6k0k1kqzv/atomiswave.7z
+mediafire https://www.mediafire.com/file/kqdomb6k0k1kqzv/atomiswave.7z/file
 7z x atomiswave.7z -o/home/arcade/shared/roms
  
 sudo rm -r atomiswave.7z
@@ -274,7 +280,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/Sa
 
 worker_power_master() {
 clear
-wget http://download847.mediafire.com/b7bs3pq1yshg/vqq3qxvrh1n78nm/mastersystem.7z
+mediafire https://www.mediafire.com/file/vqq3qxvrh1n78nm/mastersystem.7z/file
 7z x mastersystem.7z -o/home/arcade/shared/roms
  
 sudo rm -r mastersystem.7z
@@ -286,7 +292,10 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ma
 }
 worker_power_snes() {
 clear
-wget http://download848.mediafire.com/tavcvfx5jikg/ssis7rmokwoxmfq/snes.7z
+mediafire https://www.mediafire.com/file/ssis7rmokwoxmfq/snes.7z/file
+
+
+
 7z x snes.7z -o/home/arcade/shared/roms
  
 sudo rm -r snes.7z
@@ -297,8 +306,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/sn
 
 worker_power_mega() {
 clear
-wget http://download1079.mediafire.com/qaaq4h586t0g/q2g9xamloy1s1b0/megadrive.7z
-      
+mediafire https://www.mediafire.com/file/q2g9xamloy1s1b0/megadrive.7z/file
 7z x megadrive.7z -o/home/arcade/shared/roms
  
 sudo rm -r megadrive.7z
@@ -309,7 +317,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/me
 
 worker_power_nes() {
 clear
-wget https://download1324.mediafire.com/o60h58mockrg/49es6b333ztspxq/nes.7z
+mediafire https://www.mediafire.com/file/49es6b333ztspxq/nes.7z/file
 7z x nes.7z -o/home/arcade/shared/roms
  
 sudo rm -r nes.7z
@@ -320,7 +328,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ne
 
 worker_power_psx() {
 clear
-wget https://download844.mediafire.com/isaq2jyozk2g/0pttowjsrtkpzh1/psx.7z
+mediafire https://www.mediafire.com/file/0pttowjsrtkpzh1/psx.7z/file
 7z x psx.7z -o/home/arcade/shared/roms
  
 sudo rm -r psx.7z
@@ -331,6 +339,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/ps
 
 worker_power_naomi() {
 clear
+mediafire https://www.mediafire.com/file/rd59zmavr0970da/naomi.7z/file
 7z x naomi.7z -o/home/arcade/shared/roms
  
 sudo rm -r naomi.7z
