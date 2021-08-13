@@ -16,4 +16,3 @@ sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
 #sudo pacman -Sy --noconfirm
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
-sleep 6
