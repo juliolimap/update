@@ -1149,6 +1149,8 @@ git clone https://github.com/juliolimap/update.git
 cd /home/arcade/update
 sh /home/arcade/update/start.sh
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
+sudo gasetup
+exit
 }
 
  
