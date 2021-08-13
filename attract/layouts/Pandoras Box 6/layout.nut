@@ -55,7 +55,7 @@ local bg = fe.add_image(  "art/systems/mame.png", 0, 0, 800, 600 );
 fe.do_nut("plus.nut");
 
 
-local t = fe.add_artwork( "snap", 451, 152, 333, 272 );
+local t = fe.add_artwork( "video", 451, 152, 333, 272 );
 
 local scan = fe.add_image(  "art/gif.mp4", flx*0.563, fly*0.006, flw*0.438, flh*0.239 );
 
