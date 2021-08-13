@@ -278,7 +278,7 @@ mediafire https://www.mediafire.com/file/5n6l6qu24p8yh07/atari2600.7z/file
 7z x  atari2600.7z -o/home/arcade/shared/roms/atari2600
 rm -r atari2600.7z
 cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/atari2600.cfg" "/home/arcade/shared/frontends/attract/emulators/"
-sudo chmod -R 777 /home/arcade/shared/roms/atari2600
+sudo chmod -R 777 /home/arcade/shared/roms
 ;;
 
       "2") execute 
