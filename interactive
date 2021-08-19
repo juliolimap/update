@@ -2538,7 +2538,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/00rnravjrvudoqs/nes.7z/file
+mediafire https://www.mediafire.com/file/49es6b333ztspxq/nes.7z/file
 7z x nes.7z -o/home/arcade/shared/roms
  
 sudo rm -r nes.7z
@@ -3002,12 +3002,12 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/0cnnsseydn2wy0h/atari5200.7z/file
 
 7z x atari5200.7z -o/home/arcade/shared/roms
 
  
-sudo rm -r atari5200.7z
+sudo rm -r athttps://www.mediafire.com/file/0cnnsseydn2wy0h/atari5200.7z/fileari5200.7z
 sudo chmod -R 777 /home/arcade/shared/roms/atari5200
 sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/atari5200.cfg" "/home/arcade/shared/frontends/attract/emulators/"
   
@@ -3015,7 +3015,7 @@ sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/at
 
       "2") execute 
 clear
-sudo rm -r /home/arcade/shared/frontends/attract/romlists/3do.txt
+sudo rm -r /home/arcade/shared/frontends/attract/romlists/atari5200.txt
 sudo -H -u arcade Skyscraper -p atari5200 -e atari5200 -c /home/arcade/.skyscraper/config.ini -s screenscraper
 sudo -H -u arcade Skyscraper -p atari5200 -e atari5200
 sudo rm -R /home/arcade/.skyscraper/cache/atari5200
@@ -3055,9 +3055,9 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/m67at9eq57dbovs/atari7800.7z/file
 
-7z x atari5200.7z -o/home/arcade/shared/roms
+7z x atari7800.7z -o/home/arcade/shared/roms
 
  
 sudo rm -r atari7800.7z
@@ -3108,9 +3108,8 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
-
-7z x atari5200.7z -o/home/arcade/shared/roms
+mediafire https://www.mediafire.com/file/g9mgos3myzyf1s3/atarijaguar.7z/file
+7z x atarijaguar.7z -o/home/arcade/shared/roms
 
  
 sudo rm -r atarijaguar.7z
@@ -3320,8 +3319,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
-
+mediafire https://www.mediafire.com/file/76hdvkfemygzl0f/msx.7z/file
 7z x msx.7z -o/home/arcade/shared/roms
 
  
