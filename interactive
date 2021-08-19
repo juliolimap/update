@@ -130,15 +130,8 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
 reboot
 }
 
-worker_power_gparted() {
-
-gparted /dev/sda3   
- 
-}
- 
-
-
-
+   
+  
 
 mainmenu() {
   local default=no
@@ -2345,7 +2338,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/wi284s66pdtm1zo/atomiswave.7z/file
+mediafire https://www.mediafire.com/file/jyp4cg3xphcpacf/atomiswave.7z/file
 7z x atomiswave.7z -o/home/arcade/shared/roms
  
 sudo rm -r atomiswave.7z
@@ -2649,7 +2642,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/8aa6rtol04oysk6/naomi.7z/file
+mediafire https://www.mediafire.com/file/xsfl9o9u76qdqas/naomi.7z/file
 7z x naomi.7z -o/home/arcade/shared/roms
  
 sudo rm -r naomi.7z
@@ -3176,7 +3169,6 @@ sudo rm -r fba.7z
 sudo chmod -R 777 /home/arcade/shared/roms/fba
 sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/fba.cfg" "/home/arcade/shared/frontends/attract/emulators/"
   
-;;
 
       "2") execute 
 clear
@@ -3219,7 +3211,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/plfzb5bjnl509dy/gamegear.zip/file
 
 7z x gamegear.7z -o/home/arcade/shared/roms
 
@@ -3480,7 +3472,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/ousmk9ur3m7rx6x/pcengine.zip/file
 
 7z x pcengine.7z -o/home/arcade/shared/roms
 
@@ -3581,7 +3573,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
- 
+mediafire  https://www.mediafire.com/file/kf26jnw51n4cuhi/saturn.7z/file
 7z x saturn.7z -o/home/arcade/shared/roms
  
 sudo rm -r saturn.7z
@@ -3681,7 +3673,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
- 
+mediafire https://www.mediafire.com/file/wknyr782wyx5zo0/sg1000.zip/file
 7z x sg-1000.7z -o/home/arcade/shared/roms
  
 sudo rm -r sg-1000.7z
