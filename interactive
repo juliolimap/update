@@ -3216,7 +3216,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/plfzb5bjnl509dy/gamegear.zip/file
+mediafire https://www.mediafire.com/file/6th1aqm84i3hf0g/gamegear.7z/file
 
 7z x gamegear.7z -o/home/arcade/shared/roms
 
@@ -3477,7 +3477,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/ousmk9ur3m7rx6x/pcengine.zip/file
+mediafire https://www.mediafire.com/file/lx49ku9qy3tf9y9/pcengine.7z/file
 
 7z x pcengine.7z -o/home/arcade/shared/roms
 
@@ -3678,7 +3678,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/wknyr782wyx5zo0/sg1000.zip/file
+mediafire https://www.mediafire.com/file/0qmihuw7qiwa2ok/sg1000.7z/file
 7z x sg-1000.7z -o/home/arcade/shared/roms
  
 sudo rm -r sg-1000.7z
