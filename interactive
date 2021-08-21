@@ -2387,7 +2387,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/hguhu3c1naeb2q2/mastersystem.7z/file
+mediafire  https://www.mediafire.com/file/vqq3qxvrh1n78nm/mastersystem.7z/file
 7z x mastersystem.7z -o/home/arcade/shared/roms
  
 sudo rm -r mastersystem.7z
@@ -2434,7 +2434,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/prv59heak9tj36d/snes.7z/file
+mediafire https://www.mediafire.com/file/ssis7rmokwoxmfq/snes.7z/file
 7z x snes.7z -o/home/arcade/shared/roms
 sudo rm -r snes.7z
 sudo chmod -R 777 /home/arcade/shared/roms/snes
@@ -2487,7 +2487,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/fldiyex6l1y3dt7/megadrive.7z/file
+mediafire  https://www.mediafire.com/file/fldiyex6l1y3dt7/megadrive.7z/file
 7z x megadrive.7z -o/home/arcade/shared/roms
  
 sudo rm -r megadrive.7z
@@ -2539,7 +2539,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/49es6b333ztspxq/nes.7z/file
+mediafire https://www.mediafire.com/file/ubcgj4w28vpvp15/nes.7z/file
 7z x nes.7z -o/home/arcade/shared/roms
  
 sudo rm -r nes.7z
@@ -2699,7 +2699,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/xsfl9o9u76qdqas/naomi.7z/file
+mediafire  https://www.mediafire.com/file/xsfl9o9u76qdqas/naomi.7z/file
 7z x naomi.7z -o/home/arcade/shared/roms
  
 sudo rm -r naomi.7z
@@ -2904,7 +2904,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/fhffvcwj4xfl6pt/dreamcast.7z/file
+mediafire  https://www.mediafire.com/file/fhffvcwj4xfl6pt/dreamcast.7z/file
 7z x dreamcast.7z -o/home/arcade/shared/roms
  
 sudo rm -r dreamcast.7z
@@ -3325,7 +3325,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/f6iglgc74uhpv2o/gb.7z/file
 
 7z x gb.7z -o/home/arcade/shared/roms
 
@@ -3791,7 +3791,7 @@ local default=no
 clear
 mediafire 
 7z x cps3.7z -o/home/arcade/shared/roms
- 
+mediafire  https://www.mediafire.com/file/twzl4b57rxetvp4/cps3.7z/file
 sudo rm -r cps3.7z
 sudo chmod -R 777 /home/arcade/shared/roms/cps3
 sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/cps3.cfg" "/home/arcade/shared/frontends/attract/emulators/"
@@ -3858,7 +3858,7 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
       5 "Atari Jaguar" \
       6 "Atomiswave" \
       7 "Capcom III" \
-      8 "Dreamcast" \
+      8 "Dreancast" \
       9 "FBneo" \
       10 "Gamegear" \
       11 "Gameboy" \
