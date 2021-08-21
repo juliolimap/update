@@ -3323,7 +3323,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/f6iglgc74uhpv2o/gb.7z/file
 
 7z x gb.7z -o/home/arcade/shared/roms
 
