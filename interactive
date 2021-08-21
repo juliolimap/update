@@ -2269,7 +2269,7 @@ url=$(curl -Lqs "$1"|grep "href.*download.*media.*"|tail -1|cut -d '"' -f 2)
 wget "$url" # or wget "$url" if you prefer.
  }
 
-
+ 
  
 
 worker_power_atari() {
@@ -3608,108 +3608,6 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators
   return 0
 }
 
-
-
-
-###########################################################################################
- 
-worker_power_saturn() {
-#!/usr/bin/env bash
-df -h . | awk '{print $4}' >/tmp/HD.txt
-FILENAME='/tmp/HD.txt'
-I=0
-for LN in $(cat $FILENAME)
-do
-echo "Line number $((I++)) -->  $LN"
-done
-local default=no
-  while [ 0 = 0 ]; do
-  ask_option $default "Espaco ($LN)"  ""  required \
-      1 "Roms Saturn" \
-      2 "Scraper Saturn" \
-      3 "Voltar ao Menu" || return
-
-    case $ANSWER_OPTION in
-      "1") execute /
-clear
-mediafire  https://www.mediafire.com/file/kf26jnw51n4cuhi/saturn.7z/file
-7z x saturn.7z -o/home/arcade/shared/roms
- 
-sudo rm -r saturn.7z
-sudo chmod -R 777 /home/arcade/shared/roms/saturn
-sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/saturn.cfg" "/home/arcade/shared/frontends/attract/emulators/"
- 
-;;
-
-      "2") execute 
-clear
-sudo rm -r /home/arcade/shared/frontends/attract/romlists/ps2.txt
-sudo -H -u arcade Skyscraper -p saturn -e saturn -c /home/arcade/.skyscraper/config.ini -s screenscraper
-sudo -H -u arcade Skyscraper -p saturn -e saturn
-sudo rm -R /home/arcade/.skyscraper/cache/saturn
-sudo rm -R /home/arcade/.local/share/Trash
-sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators 
-;;
-      "3") return 0 ;;
-      *) notify "Bad option $ANSWER_OPTION given" ;;
-    esac
-  done
-
-  return 0
-}
-
-
-
- 
-##########################################################################################################
- 
-worker_power_segacd() {
-#!/usr/bin/env bash
-df -h . | awk '{print $4}' >/tmp/HD.txt
-FILENAME='/tmp/HD.txt'
-I=0
-for LN in $(cat $FILENAME)
-do
-echo "Line number $((I++)) -->  $LN"
-done
-local default=no
-  while [ 0 = 0 ]; do
-  ask_option $default "Espaco ($LN)"  ""  required \
-      1 "Roms Sega CD" \
-      2 "Scraper Sega CD" \
-      3 "Voltar ao Menu" || return
-
-    case $ANSWER_OPTION in
-      "1") execute /
-clear
- 
-7z x segacd.7z -o/home/arcade/shared/roms
- 
-sudo rm -r segacd.7z
-sudo chmod -R 777 /home/arcade/shared/roms/segacd
-sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/segacd.cfg" "/home/arcade/shared/frontends/attract/emulators/"
- 
-;;
-
-      "2") execute 
-clear
-sudo rm -r /home/arcade/shared/frontends/attract/romlists/segacd.txt
-sudo -H -u arcade Skyscraper -p segacd -e segacd -c /home/arcade/.skyscraper/config.ini -s screenscraper
-sudo -H -u arcade Skyscraper -p segacd -e segacd
-sudo rm -R /home/arcade/.skyscraper/cache/segacd
-sudo rm -R /home/arcade/.local/share/Trash
-sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators 
-;;
-      "3") return 0 ;;
-      *) notify "Bad option $ANSWER_OPTION given" ;;
-    esac
-  done
-
-  return 0
-}
-
-
-
  
 ##########################################################################################################
  
@@ -3768,63 +3666,7 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators
 
  
 ##########################################################################################################
-worker_power_wii() {
-#!/usr/bin/env bash
-df -h . | awk '{print $4}' >/tmp/HD.txt
-FILENAME='/tmp/HD.txt'
-I=0
-for LN in $(cat $FILENAME)
-do
-echo "Line number $((I++)) -->  $LN"
-done
-local default=no
-  while [ 0 = 0 ]; do
-  ask_option $default "Espaco ($LN)"  ""  required \
-      1 "Roms Nintendo WII" \
-      2 "Scraper Nintendo WII" \
-      3 "Voltar ao Menu" || return
 
-    case $ANSWER_OPTION in
-      "1") execute /
-clear
- 
-7z x wii.7z -o/home/arcade/shared/roms
- 
-sudo rm -r wii.7z
-sudo chmod -R 777 /home/arcade/shared/roms/wii
-sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/wii.cfg" "/home/arcade/shared/frontends/attract/emulators/"
- 
-;;
-
-      "2") execute 
-clear
-sudo rm -r /home/arcade/shared/frontends/attract/romlists/wii.txt
-sudo -H -u arcade Skyscraper -p wii -e wii -c /home/arcade/.skyscraper/config.ini -s screenscraper
-sudo -H -u arcade Skyscraper -p wii -e wii
-sudo rm -R /home/arcade/.skyscraper/cache/wii
-sudo rm -R /home/arcade/.local/share/Trash
-sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators 
-;;
-      "3") return 0 ;;
-      *) notify "Bad option $ANSWER_OPTION given" ;;
-    esac
-  done
-
-  return 0
-}
-
-
-
- 
-##########################################################################################################
-
-
-
- 
-
- 
-
-  
  
  
   
@@ -3854,6 +3696,7 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
       5 "Atari 7800" \
       6 "Atari Jaguar" \
       7 "Atomiswave" \
+      7 "CPS3" \
       8 "Dreamcast" \
       9 "FBA" \
       10 "Gamegear" \
@@ -3864,19 +3707,16 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
       15 "MSX" \
       16 "Nintendo 64" \
       17 "Naomi" \
-      18 "Nintendo NDS" \
-      19 "Neogeo" \
-      20 "Nintendo" \
-      21 "PCengine" \
-      22 "Playstation 2" \
-      23 "Playstation 1" \
-      24 "PSP" \
-      25 "Sega32X" \
-      26 "SegaCD" \
-      27 "SG1000" \
-      28 "Super Nintendo" \
-      29 "Nintendo WII" \
-      30 "Voltar ao Menu" || return
+      18 "Neogeo" \
+      19 "Nintendo" \
+      20 "PCengine" \
+      21 "Playstation 2" \
+      22 "Playstation 1" \
+      23 "PSP" \
+      24 "Sega32X" \
+      25 "SG1000" \
+      26 "Super Nintendo" \
+      27 "Voltar ao Menu" || return
 
     case $ANSWER_OPTION in
       "1") execute worker power_3do && default=2 ;;
@@ -3886,6 +3726,7 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
       "5") execute worker power_atari7800 && default=6 ;;
       "6") execute worker power_atarijaguar && default=7 ;;
       "7") execute worker power_atomis && default=8 ;;
+      "7") execute worker power_atomis && default=8 ;;    
       "8") execute worker power_dreancast && default=9 ;;
       "9") execute worker power_fba && default=10 ;;
       "10") execute worker power_gamegear && default=11 ;;
@@ -3896,19 +3737,16 @@ sudo chmod -R 777 /home/arcade/shared/frontends/attract
       "15") execute worker power_msx && default=16 ;;
       "16") execute worker power_n64 && default=17 ;;
       "17") execute worker power_naomi && default=18 ;;
-      "18") execute worker power_nds && default=19 ;;
-      "19") execute worker power_neogeo && default=20 ;;
-      "20") execute worker power_nes && default=21 ;;
-      "21") execute worker power_pcengine && default=22 ;;
-      "22") execute worker power_ps2 && default=23 ;;
-      "23") execute worker power_psx && default=24 ;;
-      "24") execute worker power_psp && default=25 ;;
-      "25") execute worker power_32x && default=27 ;;
-      "26") execute worker power_segacd && default=28 ;;
-      "27") execute worker power_sg_1000 && default=30 ;;
-      "28") execute worker power_snes && default=29 ;;
-      "29") execute worker power_wii  ;;
-      "30") return 0 ;;
+      "18") execute worker power_neogeo && default=20 ;;
+      "19") execute worker power_nes && default=21 ;;
+      "20") execute worker power_pcengine && default=22 ;;
+      "21") execute worker power_ps2 && default=23 ;;
+      "22") execute worker power_psx && default=24 ;;
+      "23") execute worker power_psp && default=25 ;;
+      "24") execute worker power_32x && default=27 ;;
+      "25") execute worker power_sg_1000 && default=30 ;;
+      "26") execute worker power_snes && default=29 ;;
+      "27") return 0 ;;
       *) notify "Bad option $ANSWER_OPTION given" ;;
     esac
   done
