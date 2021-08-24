@@ -2387,7 +2387,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/hguhu3c1naeb2q2/mastersystem.7z/file
+mediafire https://www.mediafire.com/file/vqq3qxvrh1n78nm/mastersystem.7z/file
 7z x mastersystem.7z -o/home/arcade/shared/roms
  
 sudo rm -r mastersystem.7z
@@ -2434,7 +2434,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire https://www.mediafire.com/file/prv59heak9tj36d/snes.7z/file
+mediafire https://www.mediafire.com/file/49es6b333ztspxq/nes.7z/file
 7z x snes.7z -o/home/arcade/shared/roms
 sudo rm -r snes.7z
 sudo chmod -R 777 /home/arcade/shared/roms/snes
@@ -3219,7 +3219,7 @@ local default=no
       "1") execute /
 clear
 
-medifire  
+medifire   https://www.mediafire.com/file/2giqjmanvmw0e0x/fba.7z/file
 7z x fba.7z -o/home/arcade/shared/roms
 
  
@@ -3325,7 +3325,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-#mediafirehttps://www.mediafire.com/file/l5y3kxq2pn86xkl/arcade.7z/file
+mediafire https://www.mediafire.com/file/f6iglgc74uhpv2o/gb.7z/file
 
 7z x gb.7z -o/home/arcade/shared/roms
 
@@ -3789,7 +3789,7 @@ local default=no
     case $ANSWER_OPTION in
       "1") execute /
 clear
-mediafire 
+mediafire https://www.mediafire.com/file/twzl4b57rxetvp4/cps3.7z/file
 7z x cps3.7z -o/home/arcade/shared/roms
  
 sudo rm -r cps3.7z
