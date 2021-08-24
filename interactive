@@ -3821,6 +3821,52 @@ sudo chmod -R 777 /home/arcade/shared/roms/cps3
 
  
 ##########################################################################################################
+worker_power_wii() {
+#!/usr/bin/env bash
+df -h . | awk '{print $4}' >/tmp/HD.txt
+FILENAME='/tmp/HD.txt'
+I=0
+for LN in $(cat $FILENAME)
+do
+echo "Line number $((I++)) -->  $LN"
+done
+local default=no
+  while [ 0 = 0 ]; do
+  ask_option $default "Espaco ($LN)"  ""  required \
+      1 "Roms Nintendo Wii" \
+      2 "Scraper Nintendo Wii" \
+      3 "Voltar ao Menu" || return
+
+    case $ANSWER_OPTION in
+      "1") execute /
+clear
+mediafire https://www.mediafire.com/file/5v7nuai356r0sdu/wii.7z/file
+7z x wii.7z -o/home/arcade/shared/roms
+ 
+sudo rm -r wii.7z
+sudo chmod -R 777 /home/arcade/shared/roms/wii
+sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/wii.cfg" "/home/arcade/shared/frontends/attract/emulators/"
+ 
+;;
+
+      "2") execute 
+clear
+sudo rm -r /home/arcade/shared/frontends/attract/romlists/wii.txt
+sudo -H -u arcade Skyscraper -p wii -e wii -i/home/arcade/shared/roms/wii -c /home/arcade/.skyscraper/config.ini -s screenscraper
+sudo -H -u arcade Skyscraper -p wii -e wii -i/home/arcade/shared/roms/wii
+
+sudo rm -R /home/arcade/.skyscraper/cache/wii
+sudo rm -R /home/arcade/.local/share/Trash
+sudo chmod -R 777 /home/arcade/shared/frontends/attract/emulators 
+sudo chmod -R 777 /home/arcade/shared/roms/wii
+;;
+      "3") return 0 ;;
+      *) notify "Bad option $ANSWER_OPTION given" ;;
+    esac
+  done
+
+  return 0
+}
 
 
 
