@@ -2988,7 +2988,8 @@ mediafire https://www.mediafire.com/file/94gvq43zohc6jhs/arcade.7z/file
 7z x arcade.7z -o/home/arcade/shared/roms
 
  
-sudo rm -r arcade.7zsudo chmod -R 777 /home/arcade/shared/roms/arcade
+sudo rm -r arcade.7z
+sudo chmod -R 777 /home/arcade/shared/roms/arcade
 sudo cp -r "/home/arcade/shared/frontends/attract/emulators/base add emulador/arcade.cfg" "/home/arcade/shared/frontends/attract/emulators/"
   
 ;;
