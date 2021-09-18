@@ -2984,7 +2984,7 @@ local default=no
       "1") execute /
 clear
   
-mediafire https://www.mediafire.com/file/94gvq43zohc6jhs/arcade.7z/file
+mediafire https://www.mediafire.com/file/urg6k08jip6jr3h/arcade.7z/file
 7z x arcade.7z -o/home/arcade/shared/roms
 
  
