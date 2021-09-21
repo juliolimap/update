@@ -1,0 +1,12 @@
+[CONTADOR]
+POSICAO-X=180
+POSICAO-Y=205
+POSICAO-DX=20
+POSICAO-DY=30
+TAMANHO-FONTE=32
+FONTE_USADA=/home/arcade/shared/frontends/attract/font/zekton.ttf
+COR-FONTE=fffffffffff
+COR-FUNDO=000000000
+[display_manual]
+ativo=1
+
