@@ -2987,7 +2987,7 @@ local default=no
       "1") execute /
 clear
   
-mediafire https://www.mediafire.com/file/wj18mafv6upccos/arcade.7z/file
+mediafire https://www.mediafire.com/file/wj18mafv6upccos/arcade.7z/file 
 7z x arcade.7z -o/home/arcade/shared/roms
  
 sudo rm -r arcade.7z
