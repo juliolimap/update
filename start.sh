@@ -1,8 +1,8 @@
 #sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
 sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
-sudo cp -r "/home/arcade/update/megatech.ini" /home/arcade/.attract
-sudo cp -r "/home/arcade/update/premio.png" /home/arcade/.attract/joytokey
+#sudo cp -r "/home/arcade/update/megatech.ini" /home/arcade/.attract
+#sudo cp -r "/home/arcade/update/premio.png" /home/arcade/.attract/joytokey
 
 
 sudo cp -r "/home/arcade/update/interactive" /opt/gasetup/core/procedures
