@@ -5,7 +5,7 @@ sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
 var='local bg2 ='
 var2="local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 410, 25, 80, 80 );\nbg2.preserve_aspect_ratio=true;"
-sed -ri "s@^$var.*@$var2@g" input.txt
+sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
  
 sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/bin
 
