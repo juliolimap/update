@@ -3,7 +3,7 @@ sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
 
 
-sudo sed -i -e '$a local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 420, 31, 70, 70 );/g' "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
+sudo sed -i -e '$a local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 420, 31, 70, 70 );' "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
 
 sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/bin
 sudo chmod -r /usr/bin/qr-to-png
