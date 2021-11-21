@@ -9,9 +9,9 @@ sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/bin
 sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/local/bin
 sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/share
 
-sudo chmod -r /usr/bin/qr-to-png
-sudo chmod -r /usr/local/bin/qr-to-png
-sudo chmod -r /usr/share/qr-to-png
+sudo chmod -R 777 /usr/bin
+#sudo chmod -R 777 /usr/local/bin
+#sudo chmod -R 777 /usr/share
 
 
 #sudo cp -r "/home/arcade/update/megatech.ini" /home/arcade/.attract
@@ -30,3 +30,4 @@ sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
 #sudo pacman -Sy --noconfirm
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
+reboot
