@@ -1,7 +1,7 @@
 #sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
 sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
-
+sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 
 var='local bg2 ='
 var2="local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 410, 25, 80, 80 );\nbg2.preserve_aspect_ratio=true;"
