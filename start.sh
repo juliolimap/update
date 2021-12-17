@@ -12,10 +12,9 @@ sudo cp -r "/home/arcade/update/attract/qr-to-png" /usr/bin
 
 sudo chmod 777 /usr/bin/qr-to-png
  
+sudo mkdir /home/arcade/shared/frontends/attract/bkp
+sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
 
-
-#sudo cp -r "/home/arcade/update/megatech.ini" /home/arcade/.attract
-#sudo cp -r "/home/arcade/update/premio.png" /home/arcade/.attract/joytokey
 
 
 sudo cp -r "/home/arcade/update/interactive" /opt/gasetup/core/procedures
