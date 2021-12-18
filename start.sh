@@ -4,13 +4,11 @@
 sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 sudo cp -r "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
 
-var="local bg2 ="
-var2="local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 410, 25, 80, 80 );"
-sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
+#var="local bg2 ="
+#var2="local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 410, 25, 80, 80 );"
+#sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
  
- var=" local bg2 ="
-var2="local bg2 = fe.add_image("/home/arcade/.attract/modules/qr.png", 410, 25, 80, 80 );"
-sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
+
  
 sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
 
