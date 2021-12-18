@@ -29,8 +29,10 @@ sudo cp -r "/home/arcade/update/attract/attract" "/usr/share"
 #sudo plymouth-set-default-theme -R groovy
 sudo pkill gasetup
 sudo cp -r "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
+sleel 5
 sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
 #sudo pacman -Sy --noconfirm
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
 sudo gasetup
+reboot
