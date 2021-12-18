@@ -1,6 +1,6 @@
 #sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
 sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
-
+sudo pkill gasetup
 sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 
 var='local bg2 ='
