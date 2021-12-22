@@ -121,7 +121,7 @@ esac
 
 
 worker_power_atualizar() {
-
+sudo rm -R /home/arcade/update
 sudo chmod -R 777 /home/arcade/shared/frontends/attract
  
 clear
