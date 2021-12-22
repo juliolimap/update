@@ -12,7 +12,11 @@ sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 wget https://archlinux.org/packages/extra/x86_64/libzip/download
 sudo pacman -U --noconfirm download
 sudo cp -r /home/arcade/update/flycast /usr/local/bin
-sudo cp -r /home/arcade/update/flycast /home/arcade/Deskotp
+sleep 2
+sudo cp -r /home/arcade/update/flycast.png /usr/share/pixmaps
+sleep 2
+sudo cp -r /home/arcade/update/flycast.desktop /usr/share/applications
+sleep 2
 sudo chmod -R 777 /usr/local/bin/flycast
 
  
