@@ -9,10 +9,10 @@ sudo cp -r "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
 #var2="local bg2 = fe.add_image(""\"/home/arcade/.attract/modules/qr.png""\", 410, 25, 80, 80 );"
 #sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
  
-sudo pacman -S libzip --noconfirm
+sudo pacman -Sy libzip --noconfirm
 sudo cp -r /home/arcade/update/flycast /usr/local/bin
 sudo cp -r /home/arcade/update/flycast /home/arcade/Deskotp
-
+sudo chmod -R 777 /usr/local/bin/flycast
 
  
 sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
