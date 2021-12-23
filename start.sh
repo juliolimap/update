@@ -4,7 +4,7 @@
 
 #sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 sudo cp -R "/home/arcade/update/pacman.d" "/etc/pacman.d"
-
+sudo pacman -S libzip --noconfirm
 #var="local bg2 ="
 #var2="local bg2 = fe.add_image(""\"/home/arcade/.attract/modules/qr.png""\", 410, 25, 80, 80 );"
 #sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
