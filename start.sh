@@ -10,10 +10,10 @@
 #sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
  
 wget https://archlinux.org/packages/extra/x86_64/libzip/download
-sudo pacman -U --noconfirm download
+sudo pacman -U --noconfirm /home/arcade/update/download
 dialog --infobox "intalando libzip..." 10 20 
 
-
+sleep 4
 
 sudo cp -r "/home/arcade/update/flycast" "/usr/local/bin"
 sleep 2
