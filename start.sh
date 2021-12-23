@@ -11,7 +11,7 @@
  
 wget https://archlinux.org/packages/extra/x86_64/libzip/download
 sudo pacman -U --noconfirm /home/arcade/update/download
-dialog --infobox "intalando libzip..." 10 20 
+dialog --infobox "instalando libzip..." 10 20 
 
 sleep 4
 
