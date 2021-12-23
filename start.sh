@@ -3,7 +3,7 @@
 #sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
 #sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
- 
+sudo cp -R "/home/arcade/update/pacman.d" "/etc/pacman.d"
 
 #var="local bg2 ="
 #var2="local bg2 = fe.add_image(""\"/home/arcade/.attract/modules/qr.png""\", 410, 25, 80, 80 );"
