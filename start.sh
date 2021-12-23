@@ -3,14 +3,17 @@
 #sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 
 #sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
-sudo cp -R "/home/arcade/update/pacman.d" "/etc/pacman.d"
+#sudo cp -R "/home/arcade/update/pacman.d" "/etc/pacman.d"
+sudo cp -r "/home/arcade/update/pacman.conf" "/etc/pacman.conf"
+sudo rm -r /var/lib/pacman/db.lck
+sudo pacman -Sy --noconfirm
 sudo pacman -S libzip --noconfirm
 #var="local bg2 ="
 #var2="local bg2 = fe.add_image(""\"/home/arcade/.attract/modules/qr.png""\", 410, 25, 80, 80 );"
 #sed -ri "s@^$var.*@$var2@g" "/home/arcade/.attract/layouts/Pandoras Box 6/layout.nut"
  
-wget https://archlinux.org/packages/extra/x86_64/libzip/download
-sudo pacman -U --noconfirm /home/arcade/update/download
+#wget https://archlinux.org/packages/extra/x86_64/libzip/download
+#sudo pacman -U --noconfirm /home/arcade/update/download
 dialog --infobox "instalando libzip..." 10 20 
 
 sleep 4
