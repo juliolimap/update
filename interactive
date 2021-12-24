@@ -152,8 +152,8 @@ done
 local default=no
   while [ 0 = 0 ]; do
   ask_option $default "Espaco ($LN)"  ""  required \
-      1 "Pandoras's Box 4" \
-      2 "Pandoras's Box 6" \
+      1 "Pandora's Box 4" \
+      2 "Pandora's Box 6" \
       3 "Ambience-HD" \
       4 "Voltar ao Menu" || return
 
