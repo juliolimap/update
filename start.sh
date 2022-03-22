@@ -37,7 +37,7 @@ sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
 sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/local/bin"
 sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/share"
-
+sudo chmod -R 777 /usr/local/bin/attractplus
 
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/local/bin"
@@ -54,3 +54,4 @@ dialog --infobox "Reiniciando..." 10 20
 sleep 3 
 clear
 reboot
+ 
