@@ -34,6 +34,10 @@ sudo mkdir /home/arcade/shared/frontends/attract/bkp
 sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
 
 
+sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/bin"
+sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/local/bin"
+sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/share"
+
 
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/local/bin"
