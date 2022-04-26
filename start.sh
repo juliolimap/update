@@ -27,8 +27,8 @@
 
  
 #sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
-#sudo mv -f "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
-#sleep 2
+sudo mv -f "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
+sleep 2
 #sudo chmod 777 /usr/bin/qr-to-png
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
