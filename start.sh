@@ -1,7 +1,9 @@
  
-#sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
-#sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
+sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
+sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 #sudo chmod -R 777 /tmp
+sudo chmod -R 777 /home/arcade/.config
+sudo chmod -R 777 /home/arcade/shared/frontends
 #sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 #sudo cp -r "/home/arcade/update/pacman.conf" "/etc/pacman.conf"
 #sudo rm -r /var/lib/pacman/db.lck
