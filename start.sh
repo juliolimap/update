@@ -1,6 +1,6 @@
  
-sudo cp -R /home/arcade/update/retroarch /home/arcade/.config
-sudo cp -R /home/arcade/update/.mame /home/arcade
+sudo cp -R /home/arcade/update/.retroarch /home/arcade/.config
+sudo cp -R /home/arcade/pdate/.mame /home/arcade
 sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 #sudo chmod -R 777 /tmp
 sudo chmod -R 777 /home/arcade/.config
