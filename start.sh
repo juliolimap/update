@@ -42,6 +42,8 @@
 #sudo cp -r "/home/arcade/update/attract/attractplus" "/usr/share"
 #sudo chmod -R 777 /usr/local/bin/attractplus
 
+
+sudo cp -r "/home/arcade/update/attract/startfe.sh" "/opt/galauncher"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/local/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/share"
