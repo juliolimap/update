@@ -46,6 +46,10 @@ sudo cp -r "/home/arcade/update/attract/attract" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/local/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/share"
 sudo chmod -R 777 /usr/local/bin/attract
+sudo cp -r "/home/arcade/update/attract/wd.png" "/usr/share/plymouth/themes/groovy"
+sudo plymouth-set-default-theme -R groovy
+
+
 
 
 #sudo cp -r "/home/arcade/update/splash.png" /usr/share/plymouth/themes/groovy
