@@ -1,10 +1,10 @@
  
-sudo cp -R /home/arcade/update/.retroarch /home/arcade/.config
-sudo cp -R /home/arcade/pdate/.mame /home/arcade
-sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
+#sudo cp -R /home/arcade/update/.retroarch /home/arcade/.config
+#sudo cp -R /home/arcade/pdate/.mame /home/arcade
+#sudo cp -R /home/arcade/update/attract /home/arcade/shared/frontends
 #sudo chmod -R 777 /tmp
-sudo chmod -R 777 /home/arcade/.config
-sudo chmod -R 777 /home/arcade/shared/frontends
+#sudo chmod -R 777 /home/arcade/.config
+#sudo chmod -R 777 /home/arcade/shared/frontends
 #sudo cp -r "/home/arcade/update/config.ini" "/home/arcade/.skyscraper"
 #sudo cp -r "/home/arcade/update/pacman.conf" "/etc/pacman.conf"
 #sudo rm -r /var/lib/pacman/db.lck
@@ -30,8 +30,8 @@ sudo chmod -R 777 /home/arcade/shared/frontends
 
  
 #sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
-sudo mv -f "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
-sleep 2
+#sudo mv -f "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
+#sleep 2
 #sudo chmod 777 /usr/bin/qr-to-png
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
@@ -45,6 +45,8 @@ sleep 2
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/local/bin"
 sudo cp -r "/home/arcade/update/attract/attract" "/usr/share"
+sudo chmod -R 777 /usr/local/bin/attract
+
 
 #sudo cp -r "/home/arcade/update/splash.png" /usr/share/plymouth/themes/groovy
 #sudo plymouth-set-default-theme -R groovy
