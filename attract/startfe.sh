@@ -1,6 +1,6 @@
 #!/bin/bash
 source /opt/gatools/include/includes.sh
-
+sudo cp -r "/home/arcade/shared/frontends/attract/bkp/attract.cfg" "/home/arcade/shared/frontends/attract"
 video=
 
 [[ -z $FE ]] && FE=$(get_config_value "$GA_CONF" frontend)
@@ -22,7 +22,7 @@ fi
 
 case "$FE" in
   attract) 
-sudo cp -r "/home/arcade/shared/frontends/attract/bkp/attract.cfg" "/home/arcade/shared/frontends/attract"
+
 
     attract --config "$MOTHER_OF_ALL"/frontends/attract &>> "$LOG_DIR"/attract.log
     ;;
