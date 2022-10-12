@@ -29,10 +29,10 @@
 #sudo chmod -R 777 /usr/local/bin/flycast
 
  
-sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
+#waglei ---- sudo cp -r "/home/arcade/update/attract/qr-to-png" "/usr/bin"
 #sudo mv -f "/home/arcade/update/interactive" "/opt/gasetup/core/procedures"
 sleep 2
-sudo chmod 777 /usr/bin/qr-to-png
+#waglei ---- sudo chmod 777 /usr/bin/qr-to-png
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp
 #sudo mkdir /home/arcade/shared/frontends/attract/bkp/attract
 
@@ -54,8 +54,8 @@ sudo chmod -R 777 /usr/local/bin/attract
 
 
 
-sudo cp -r "/home/arcade/update/splash.png" /usr/share/plymouth/themes/groovy
-sudo plymouth-set-default-theme -R groovy
+#waglei ---- sudo cp -r "/home/arcade/update/splash.png" /usr/share/plymouth/themes/groovy
+#waglei ---- sudo plymouth-set-default-theme -R groovy
  
 sudo rm -R /home/arcade/update
 sudo rm -R /home/arcade/.local/share/Trash
